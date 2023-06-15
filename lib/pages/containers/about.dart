@@ -89,13 +89,13 @@ Container(
               height: 10,
             ),
             Text(
-              'bcvbjknljhgjbknlm;jkhgcfgvhbjknljkhjcghfgxchvhjbkjnklbjkvhjcghfxgchgvhjbkj',
+              'Im a fourth-year student at BITS Pilani Goa. I have previously worked at several early-stage startups such as BlueLearn, HashCase, Zealth(YC21). The intersection between startups and technology is something i have very recently discovered. Love participating in hackathons as well!',
               textAlign: TextAlign.left,
               style: TextStyle(
-                  color: Colors.black,
-                  fontSize: w! / 10,
+                  color: const Color.fromARGB(255, 128, 128, 128),
+                  fontSize: 30,
                   height: 1.1,
-                  fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.normal),
             ),
 
           ],
