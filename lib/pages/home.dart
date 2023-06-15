@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:website/pages/containers/about.dart';
 import 'package:website/pages/containers/contact.dart';
+import 'package:website/pages/containers/experience.dart';
 import 'package:website/pages/containers/landing-page.dart';
 import 'package:website/pages/containers/projects.dart';
 import '/widgets/navbar.dart';
@@ -31,6 +32,7 @@ class _HomeState extends State<Home> {
             Projects(),
             About(),
             // Contact(),
+            // Experience(),
           ],
         ),
       ),
