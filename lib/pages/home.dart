@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:website/pages/containers/about.dart';
+import 'package:website/pages/containers/contact.dart';
+import 'package:website/pages/containers/landing-page.dart';
+import 'package:website/pages/containers/projects.dart';
 import '/widgets/navbar.dart';
 import 'package:website/utils/constants.dart';
 
@@ -23,11 +27,10 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 100,
             ),
-            // Container1(),
-            // Container2(),
-            // Container3(),
-            // Container4(),
-            // Container5()
+            LandingPage(), 
+            Projects(),
+            About(),
+            // Contact(),
           ],
         ),
       ),
