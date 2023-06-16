@@ -38,8 +38,6 @@ Widget MobileNavBar() {
 
 Widget DeskTopNavBar() {
   return Container(
-    color: Colors.black,
-    // margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
     height: 70,
     child: Row(
       mainAxisAlignment: MainAxisAlignment.end,
@@ -62,7 +60,9 @@ Widget navButton(String text) {
   return Container(
       margin: EdgeInsets.symmetric(horizontal: 4),
       child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            
+          },
           child:
               Text(text, style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255), fontSize: 18))));
 }
