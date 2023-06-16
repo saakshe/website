@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:website/pages/home.dart';
 
@@ -14,7 +15,7 @@ class _NavBarState extends State<NavBar> {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       mobile: MobileNavBar(),
-      desktop: DeskTopNavBar(),
+      desktop: DeskTopNavBar()
     );
   }
 }
@@ -25,7 +26,11 @@ Widget MobileNavBar() {
     height: 70,
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [Icon(Icons.menu), 
+      children: [
+        IconButton(onPressed: () {
+          //should display a list of menu options 
+          print('tapped');
+        }, icon: Icon(Icons.menu)),
       ],
     ),
   );
@@ -33,7 +38,8 @@ Widget MobileNavBar() {
 
 Widget DeskTopNavBar() {
   return Container(
-    margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+    color: Colors.black,
+    // margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
     height: 70,
     child: Row(
       mainAxisAlignment: MainAxisAlignment.end,
@@ -42,8 +48,9 @@ Widget DeskTopNavBar() {
           children: [
             navButton('Projects'),
             navButton('About'),
+            navButton('Experience'),
             navButton('Contact'),
-            // navButton('Feedback')
+            SizedBox(width: 40,),
           ],
         ),
       ],
@@ -57,5 +64,5 @@ Widget navButton(String text) {
       child: TextButton(
           onPressed: () {},
           child:
-              Text(text, style: TextStyle(color: Colors.black, fontSize: 18))));
+              Text(text, style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255), fontSize: 18))));
 }
