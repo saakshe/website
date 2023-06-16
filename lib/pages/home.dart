@@ -4,6 +4,7 @@ import 'package:website/pages/containers/contact.dart';
 import 'package:website/pages/containers/experience.dart';
 import 'package:website/pages/containers/landing-page.dart';
 import 'package:website/pages/containers/projects.dart';
+import 'package:website/widgets/footer.dart';
 import '/widgets/navbar.dart';
 import 'package:website/utils/constants.dart';
 
@@ -31,8 +32,10 @@ class _HomeState extends State<Home> {
             LandingPage(), 
             Projects(),
             About(),
-            // Experience(),
+            Experience(),
             Contact(),
+            SizedBox(height: 100,),
+            Footer(),
           ],
         ),
       ),

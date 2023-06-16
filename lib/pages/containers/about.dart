@@ -67,6 +67,7 @@ Container(
     child: Column(
        crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: 130,),
         Text(
               'ABOUT ME'.toUpperCase(),
               style: TextStyle(
@@ -74,7 +75,7 @@ Container(
                 fontSize: 16,
               ),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 80,),
         Row(
           children: [
                     Container(

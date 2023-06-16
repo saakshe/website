@@ -35,8 +35,10 @@ class _ProjectsState extends State<Projects> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: 70,),
         Container(
           padding: EdgeInsets.symmetric(horizontal: w! / 10, vertical: 30),
+  
           child: Text(
                 'projects'.toUpperCase(),
                 style: TextStyle(
@@ -46,7 +48,7 @@ class _ProjectsState extends State<Projects> {
               ),
         ),
         //shopping application 
-        DesktopDisplay('https://sc04.alicdn.com/kf/HLB1UgTLQSzqK1RjSZPxq6A4tVXa3.jpg', 'Shopping App', 'desc', 'https://github.com/saakshe/shop_app'),
+        DesktopDisplay('https://cdn.dribbble.com/users/89278/screenshots/14699627/media/a9f2ce1335cc8f4868c109f1fdd9ec58.png?compress=1&resize=400x300&vertical=center', 'Shopping App', 'desc', 'https://github.com/saakshe/shop_app'),
         // wmn- emotify
         DesktopDisplay('https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGUlMjBtdXNpY3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80', 'Emotify', 'Emotify makes use of the information on your current mood and makes a jukebox for you, \nhassle free after a stressful day. \nListen to different jukeboxes everyday based on your mood and vibe of the day. \nEmotify crafts personalized jukeboxes to match your unique emotional journey.', 'https://github.com/saakshe/wmn_team_three'),
         // text2audio
@@ -59,12 +61,12 @@ class _ProjectsState extends State<Projects> {
 
   Widget DesktopDisplay(String projImg ,String project, String desc, String link) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(100, 0, 50, 0),
+      padding: EdgeInsets.fromLTRB(150, 0, 50, 0),
       child: Row(
         children: [
           Container(
-            height: 500,
-            width: 500,
+            height: 300,
+            width: 300,
             child: Image.network(projImg,
             ),
           ),

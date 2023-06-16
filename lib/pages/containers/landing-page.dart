@@ -61,40 +61,37 @@ class _LandingPageState extends State<LandingPage> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Expanded(
-              child: Container(
-            // color: Colors.red,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SizedBox(height: 120,),
-                Text(
-                  'Hi, this is Saakshi',
-                  style: TextStyle(
-                      fontSize: w! / 20,
-                      fontWeight: FontWeight.bold,
-                      height: 1),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  'Double majoring in Biological Scineces and Mechanical Engineering from BITS Pilani Goa',
-                  style: TextStyle(color: const Color.fromARGB(255, 67, 63, 63), fontSize: 20),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(height: 200,),
+                  Text(
+                    'Hi, this is Saakshi',
+                    style: TextStyle(
+                        fontSize: w! / 20,
+                        fontWeight: FontWeight.bold,
+                        height: 1),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    'Double majoring in Biological Scineces and Mechanical Engineering from BITS Pilani Goa',
+                    style: TextStyle(color: const Color.fromARGB(255, 67, 63, 63), fontSize: 20),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
            
-                    Text(
-                      'I love reading about startups!',
-                      style:
-                          TextStyle(color: Colors.grey.shade400, fontSize: 16),
-                    ),
-                    SizedBox(height: 80,),
-                    
-              ],
-            ),
-          )),
+                      Text(
+                        'I love reading about startups!',
+                        style:
+                            TextStyle(color: Colors.grey.shade400, fontSize: 16),
+                      ),
+                      SizedBox(height: 80,),
+                      
+                ],
+              )),
         ],
       ),
     );
