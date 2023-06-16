@@ -40,5 +40,27 @@ class _HomeState extends State<Home> {
         ),
       ),
     ));
+    // return Column(
+    //   children: [
+    //     NavBar(),
+    //     SingleChildScrollView(
+    //       child: Container(
+    //         child: Column(
+    //           children: [
+    //             SizedBox(
+    //           height: 100,
+    //         ),
+    //         LandingPage(), 
+    //         Projects(),
+    //         About(),
+    //         Experience(),
+    //         Contact(),
+    //         SizedBox(height: 100,),
+    //         Footer(),
+    //           ],
+    //         ),
+    //       ),)
+    //   ],
+    // );
   }
 }

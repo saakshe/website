@@ -23,9 +23,9 @@ class _LandingPageState extends State<LandingPage> {
       margin: EdgeInsets.symmetric(horizontal: w! / 10, vertical: 20),
       child: Column(
         children: [
-          // SizedBox(
-          //   height: 20,
-          // ),
+          SizedBox(
+            height: 20,
+          ),
           Text(
             'Hi, this is Saakshi',
             textAlign: TextAlign.center,
@@ -33,7 +33,7 @@ class _LandingPageState extends State<LandingPage> {
                 fontSize: w! / 10, fontWeight: FontWeight.bold, height: 1),
           ),
           SizedBox(
-            height: 5,
+            height: 20,
           ),
           Text(
             'Double Majoring in Biological Sciences and Mechanical Engineering from BITS Pilani Goa',
@@ -41,14 +41,16 @@ class _LandingPageState extends State<LandingPage> {
             style: TextStyle(color: Color.fromARGB(255, 67, 63, 63), fontSize: 20),
           ),
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           Text(
             'I love reading about startups!',
             style: TextStyle(color: Colors.grey.shade600, fontSize: 16),
-          )
+          ),
+          SizedBox(height: 300,),
         ],
       ),
+      
     );
   }
 

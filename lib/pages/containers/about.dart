@@ -26,14 +26,6 @@ class _AboutState extends State<About> {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        // Container(
-        //   height: 200,
-        //   decoration: BoxDecoration(
-        //     image:
-        //         DecorationImage(image: AssetImage('assets/images/saakshi.jpg'), 
-        //         fit: BoxFit.contain),
-        //   ),
-        // ),
         SizedBox(
           height: 20,
         ),
@@ -45,16 +37,16 @@ class _AboutState extends State<About> {
           ),
         ),
         SizedBox(
-          height: 10,
+          height: 30,
         ),
         Text(
-          'all deets about saaksnin gfdcgvhbjhgfcgvbhnjkjhgfxcbvnmjkhgcvb nmjhvbnmbvbnmkjhbnkmjbnmkjbn',
+                    'I\'m a fourth-year student at BITS Pilani Goa. I have previously worked at several early-stage startups such as BlueLearn, HashCase, Zealth(YC21). The intersection between startups and technology is something I have very recently discovered. Love participating in hackathons as well!',
           textAlign: TextAlign.center,
           style: TextStyle(
-              color: Colors.black,
+              color:const Color.fromARGB(255, 128, 128, 128),
               fontSize: w! / 20,
               height: 1.1,
-              fontWeight: FontWeight.bold),
+              ),
         ),
       ],
     ),

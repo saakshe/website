@@ -37,7 +37,9 @@ Widget MobileNavBar() {
 }
 
 Widget DeskTopNavBar() {
-  return Container(
+  return Card(
+    elevation: 3,
+    child: Container(
     height: 70,
     child: Row(
       mainAxisAlignment: MainAxisAlignment.end,
@@ -53,7 +55,7 @@ Widget DeskTopNavBar() {
         ),
       ],
     ),
-  );
+  ));
 }
 
 Widget navButton(String text) {
@@ -64,5 +66,5 @@ Widget navButton(String text) {
             
           },
           child:
-              Text(text, style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255), fontSize: 18))));
+              Text(text, style: TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 18))));
 }
