@@ -50,6 +50,7 @@ Widget DeskTopNavBar() {
             navButton('About'),
             navButton('Experience'),
             navButton('Contact'),
+            navButton('Resume'),
             SizedBox(width: 40,),
           ],
         ),

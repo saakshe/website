@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'dart:html' as html;
-
+import 'package:carousel_slider/carousel_slider.dart';
 import '../../utils/constants.dart';
 
 
@@ -25,7 +25,44 @@ class _ExperienceState extends State<Experience> {
 
 
   Widget MobileExp() {
-    return Container();
+    return Column(
+      children: [
+        SizedBox(
+          height: 40,
+        ),
+        Text(
+          'EXPERIENCE',
+          style: TextStyle(
+            color: Colors.grey.shade400,
+            fontSize: 14,
+          ),
+        ),
+        SizedBox(
+          height: 15,
+        ),
+        CarouselSlider(
+          items: [
+            MobileDisplayEx('https://media.licdn.com/dms/image/C560BAQF0MFvmBgw7Hg/company-logo_200_200/0/1658231285074?e=1695254400&v=beta&t=PW5G88BgJN_t3gty83ngc8TR_hOWMsOjBAylLU6sxCg', 'Intern','gradCapital'),
+            MobileDisplayEx('https://media.licdn.com/dms/image/C560BAQHx7Vr3s0_4YQ/company-logo_200_200/0/1661233325052?e=1695254400&v=beta&t=85YJCCr5ZsnkXbhwS9AFk-JjmG6ttDgayVTLcfqPqdg', 'Marketing & Communications Head','HashCase'),
+            MobileDisplayEx('https://media.licdn.com/dms/image/C560BAQGW7_WG-vi0mA/company-logo_200_200/0/1589785206048?e=1695254400&v=beta&t=hwFo_0LzWRYOBl4_E-XwIIuFnHg1V7oa1aUMa0eV9s0', 'Product', 'Pacify Med Technologies'),
+            MobileDisplayEx('https://media.licdn.com/dms/image/C560BAQG2H1EXLHfSKg/company-logo_200_200/0/1644495267516?e=1695254400&v=beta&t=t3uSrvyo6un1KMUiudCSl1x3l5dVPFCuVDSpviyeEbw', 'Operations & Product', 'Samwaad'),
+            MobileDisplayEx('https://media.licdn.com/dms/image/C4E0BAQHQL7bqpu71nQ/company-logo_200_200/0/1623588535920?e=1695254400&v=beta&t=eRwU9T5neu-MnDDc3YhE2ADsJzuw_031V10xAqAEwkM', 'Product Marketing','Bluelearn'),
+            MobileDisplayEx('https://media.licdn.com/dms/image/D560BAQHgBxhHzGuV6w/company-logo_200_200/0/1685345378487?e=1695254400&v=beta&t=xAypliXzq9jtlhTRJwEapfAthYb1Z3QIfnnlzaUGFyg', 'Marketing', 'Zealth AI'),
+          
+          ], 
+          options: CarouselOptions(
+              height: 380.0,
+              enlargeCenterPage: true,
+              autoPlay: true,
+              aspectRatio: 16 / 9,
+              autoPlayCurve: Curves.fastOutSlowIn,
+              enableInfiniteScroll: true,
+              autoPlayAnimationDuration: Duration(milliseconds: 800),
+              viewportFraction: 0.8,
+            ),
+          ),
+      ],
+    );
   }
 
 
@@ -98,6 +135,41 @@ class _ExperienceState extends State<Experience> {
           )
         ],
         ),
+    );
+  }
+  Widget MobileDisplayEx(String imgLink, String position, String company) {
+    return Column(
+      children: [
+        SizedBox(height: 50,),
+        Container(
+          height: 200,
+          width: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                image: DecorationImage(
+                  image: NetworkImage(imgLink),
+                  fit: BoxFit.contain
+                  ,
+                ),
+              ), ),
+              Column(children: [
+                SizedBox(height: 10),
+                Text(position, 
+                  style: TextStyle(color: Color.fromARGB(255, 47, 47, 47), fontSize: 18,
+                  fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                  softWrap: true,
+                  ),
+                  SizedBox(height: 5,),
+                  Text(company, 
+                  style: TextStyle(color: Color.fromARGB(255, 81, 81, 81), fontSize: 12,
+                  fontWeight: FontWeight.normal),
+                  textAlign: TextAlign.center,
+                  softWrap: true,
+                  ),
+                            ],),
+        
+      ],
     );
   }
 }
