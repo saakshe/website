@@ -84,14 +84,21 @@ class _ExperienceState extends State<Experience> {
                   ),
                 ),
           ),
-          DesktopDisplayEx('https://media.licdn.com/dms/image/C560BAQF0MFvmBgw7Hg/company-logo_200_200/0/1658231285074?e=1695254400&v=beta&t=PW5G88BgJN_t3gty83ngc8TR_hOWMsOjBAylLU6sxCg', 'Intern','gradCapital', 'Assisted with fundraising for their fund by analyzing net-worth of individuals along with the portion of their liquid worth using\ninvestor math. Segmented the world individual owners into \ncategories by their conditions & behaviors and analyzed major three categories in depth.'),
-          DesktopDisplayEx('https://media.licdn.com/dms/image/C560BAQHx7Vr3s0_4YQ/company-logo_200_200/0/1661233325052?e=1695254400&v=beta&t=85YJCCr5ZsnkXbhwS9AFk-JjmG6ttDgayVTLcfqPqdg', 'Marketing & Communications Head','HashCase',  'Handled partnerships with several startups and helped them attain their perfect utility addition to their NFTs \nthereby successfully onboarding a lot of users onto Hash Case\’s platform.\nStrategized on the use of twitter to get the initial organic traction for Hash Case.'),
-          DesktopDisplayEx('https://media.licdn.com/dms/image/C560BAQGW7_WG-vi0mA/company-logo_200_200/0/1589785206048?e=1695254400&v=beta&t=hwFo_0LzWRYOBl4_E-XwIIuFnHg1V7oa1aUMa0eV9s0', 'Product', 'Pacify Med Technologies',  'Worked on benchmarking of the skin spray gun device against the standards already present in the market \nbased on certain parameters and also worked \ntowards documents which would help Pacify get FDA approval for testing and sale of the device.\nWorked on the reaching out to doctors for testing and also overlooked on the design for website and content \nfor Pacify’s official blogs.'),
-          DesktopDisplayEx('https://media.licdn.com/dms/image/C560BAQG2H1EXLHfSKg/company-logo_200_200/0/1644495267516?e=1695254400&v=beta&t=t3uSrvyo6un1KMUiudCSl1x3l5dVPFCuVDSpviyeEbw', 'Operations & Product', 'Samwaad',  'Landed business collaborations with various other startups and Instagram and social media \ninfluencers and worked on the product-market fit for the launch of the application. \nParticipated in numerous competitions and applied for several incubators in the past six months and manage a \ncommunity of 200+ people on WhatsApp and have over 23k followers on Instagram and \ncreated content and designed post for social media with a traction of 1M+ accounts.'),
-          DesktopDisplayEx('https://media.licdn.com/dms/image/C4E0BAQHQL7bqpu71nQ/company-logo_200_200/0/1623588535920?e=1695254400&v=beta&t=eRwU9T5neu-MnDDc3YhE2ADsJzuw_031V10xAqAEwkM', 'Product Marketing','Bluelearn',  'Strategized content marketing for social presence of the brand and analyzed data points \nand creative ways to improve engagement across socials. \nAssisted the marketing manager with campaign ideas that helped BlueLearn stand out as a brand \nand garner more audience engagement.'),
-          DesktopDisplayEx('https://media.licdn.com/dms/image/D560BAQHgBxhHzGuV6w/company-logo_200_200/0/1685345378487?e=1695254400&v=beta&t=xAypliXzq9jtlhTRJwEapfAthYb1Z3QIfnnlzaUGFyg', 'Marketing', 'Zealth AI', 'Directly worked with founders to understand user persona and improve brand \nvisibility to onboard 10+ Indian hospitals and 100+ users for pre-launch phase. \nWorked to understand the perspective of the users about the beta version of the \napplication and understand their pain points.'),
-        
-        ],
+          DesktopDisplayEx('assets/images/pay3.jpg', 'Product','Pay3', '.'),
+          SizedBox(height: 20,),
+          DesktopDisplayEx('assets/images/gradcap.png', 'Intern','gradCapital', 'Assisted with fundraising for their fund by analyzing net-worth of individuals along with the portion of their liquid worth using\ninvestor math. Segmented the world individual owners into \ncategories by their conditions & behaviors and analyzed major three categories in depth.'),
+          SizedBox(height: 20,),
+          DesktopDisplayEx('assets/images/hashcase.jpg', 'Marketing & Communications Head','HashCase',  'Handled partnerships with several startups and helped them attain their perfect utility addition to their NFTs \nthereby successfully onboarding a lot of users onto Hash Case\’s platform.\nStrategized on the use of twitter to get the initial organic traction for Hash Case.'),
+          SizedBox(height: 20,),
+          DesktopDisplayEx('assets/images/pacify.jpg', 'Product', 'Pacify Med Technologies',  'Worked on benchmarking of the skin spray gun device against the standards already present in the market \nbased on certain parameters and also worked \ntowards documents which would help Pacify get FDA approval for testing and sale of the device.\nWorked on the reaching out to doctors for testing and also overlooked on the design for website and content \nfor Pacify’s official blogs.'),
+          SizedBox(height: 20,),
+          DesktopDisplayEx('assets/images/pay3.jpg', 'Operations & Product', 'Samwaad',  'Landed business collaborations with various other startups and Instagram and social media \ninfluencers and worked on the product-market fit for the launch of the application. \nParticipated in numerous competitions and applied for several incubators in the past six months and manage a \ncommunity of 200+ people on WhatsApp and have over 23k followers on Instagram and \ncreated content and designed post for social media with a traction of 1M+ accounts.'),
+          SizedBox(height: 20,),
+          DesktopDisplayEx('assets/images/bluelearn.jpg', 'Product Marketing','Bluelearn',  'Strategized content marketing for social presence of the brand and analyzed data points \nand creative ways to improve engagement across socials. \nAssisted the marketing manager with campaign ideas that helped BlueLearn stand out as a brand \nand garner more audience engagement.'),
+          SizedBox(height: 20,),
+          DesktopDisplayEx('assets/images/zealth.jpg', 'Marketing', 'Zealth AI', 'Directly worked with founders to understand user persona and improve brand \nvisibility to onboard 10+ Indian hospitals and 100+ users for pre-launch phase. \nWorked to understand the perspective of the users about the beta version of the \napplication and understand their pain points.'),
+          SizedBox(height: 20,),
+                  ],
       ),
     );
   }
@@ -104,8 +111,8 @@ class _ExperienceState extends State<Experience> {
           Container(
             height: 300,
             width: 300,
-            child: Image.network(projImg,
-            ),
+            child: Image(image: AssetImage(projImg),
+                ),
           ),
           SizedBox(width: 100,),
           Column(
@@ -132,7 +139,6 @@ class _ExperienceState extends State<Experience> {
               ),
               textAlign: TextAlign.left,
               ),
-              SizedBox(height: 20,),
             ],
           )
         ],

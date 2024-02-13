@@ -74,7 +74,7 @@ Container(
                     Container(
                     height: 300,
                     child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20.0),
+                      borderRadius: BorderRadius.circular(30.0),
                       child: Image.network('https://media.licdn.com/dms/image/C5603AQF3U7xp3fTfaA/profile-displayphoto-shrink_800_800/0/1658029442967?e=2147483647&v=beta&t=RuiXVdHiyG96cnsaliRrIvlZnUvCGmU2BW7QWTt4vrc')),
                   ),
             Expanded(
